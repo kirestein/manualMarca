@@ -1,14 +1,25 @@
+body,body *{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Caviar Dreams;
+    src: url(CaviarDreams.ttf);
+}
+
 .cabecalho {
     display: flex;
     flex-direction: row;
     background: #0b0c0c;
-    height: 5rem;
+    height: 10rem;
     width: 100% auto;
 }
 
 .cabecalho img {
     display: flex;
     flex-direction: row;
+    margin-left: 3%;
 }
 
 .cabecalho h1 {
@@ -16,5 +27,54 @@
     flex-direction: row;
     color: white;
     text-align: center;
-    margin-left: 3rem;
+    margin: 3.5rem 0 0 10rem;
+    font-family: Caviar Dreams;
 }
+.Menu{
+    padding: 5px;
+    cursor:default;
+}
+.Menu:hover{
+    text-decoration:none;
+}
+.subMenu-conteudo{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.subMenu-conteudo a{
+    text-decoration: none;
+    display: block;
+}
+.subMenu:hover .subMenu-conteudo{
+display: block;
+}
+nav{
+    background-color: #0b0c0c;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    background-color:#0b0c0c;
+    color:#279d66;
+    margin: 0 1% 0 0;
+    padding: 0.5%;  
+}
+nav ul li a{
+    color:#279d66;;
+    text-decoration: none; 
+}
+li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover, subMenu:hover{
+    background-color: white;
+}
+li.subMenu{
+    display: inline-block;
+} 
